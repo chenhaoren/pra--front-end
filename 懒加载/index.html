@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>懒加载</title>
+    <style>
+        img {
+            width: 100%;
+            background-color: gray;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/lodash.js/4.17.15/lodash.js"></script>
+</head>
+<body>
+    <div id="container">
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200411233545.jpg" />
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200210111227.png"  />
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200412003937.jpg"  />
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200412131040.png"  />
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200414105838.png"  />
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200209115915.png"  />
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200412135209.png"  />
+
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200424161647.gif"  />
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200424161252.gif"  />
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200219224857.jpeg"  />
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200413140835.gif"/>
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200413112824.png" />
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200413111317.png" />
+        <img src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200506140552.png" data-src="https://chr-blog.oss-cn-hangzhou.aliyuncs.com/img/20200413104041.png" />
+    </div>
+</body>
+<script src="lazy-load-with-loading.js"></script>
+</html>
